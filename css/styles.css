@@ -18,8 +18,9 @@ header
     padding-right: 50px;
     display: flex;
     background-color: rgb(27, 27, 27);
-    height: 100px;
+    height: 80px;
     justify-content: space-between;
+    align-items: center;
 }
 .head 
 {
@@ -30,6 +31,10 @@ nav
 {
     align-items: center;
     display: flex;
+}
+
+header li a:hover{
+    color: blanchedalmond;
 }
 
 ul 
@@ -73,8 +78,9 @@ main
     justify-content: center;
     font-size: 150%;
     background-image: url(../img/bgcolor2.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 1080px;
     background-repeat: no-repeat;
+    cursor: default;
 }
 
 .content h2
@@ -114,6 +120,7 @@ main
     align-items: center;
     margin-top: 40px;
     font-weight: bold;
+    cursor: default;
 }
 
 .prods p{
@@ -200,6 +207,7 @@ section p{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    align-items: flex-end;
 }
 
 .right img {
@@ -225,6 +233,6 @@ footer p
 }
 
 .tab{
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
