@@ -72,13 +72,13 @@ main
 
 .content 
 {
-    height: 1000px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 150%;
     background-image: url(../img/bgcolor2.jpg);
-    background-size: 100% 1080px;
+    background-size: cover;
     background-repeat: no-repeat;
     cursor: default;
 }
@@ -108,17 +108,23 @@ main
     width: 130px;
 }
 
+.prods ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .prods li
 {
     border: 4px solid #444444;
     height: 300px;
     width: 300px;
     margin-right: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     font-weight: bold;
     cursor: default;
 }
@@ -215,16 +221,22 @@ section p{
     margin-right: 40px;
 }
 
+.right a{
+    color: #444444;
+    text-align: center;
+}
+
 footer 
 {
     display: flex;
+    flex-direction: row;
     background-color: rgb(27, 27, 27);
     height: 80px;
     justify-content: center;
     align-items: center;
 }
 
-footer p 
+footer span 
 {
     height: 20px;
     margin: 0px;
@@ -233,6 +245,58 @@ footer p
 }
 
 .tab{
-    padding-left: 80px;
-    padding-right: 80px;
+    width: 1200;
+    margin: 0 60px;
+}
+
+@media (max-width: 1600px) {
+    .prods {
+        height: 950px;
+    }
+}
+
+@media (max-width: 1080px) {
+    body {
+        zoom: 175%;
+    }
+    .prods ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prods{
+        height: 1600px;
+    }
+    .twosides{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact {
+        height: 600px;
+    }
+    .prods li{
+        margin-right: 0%;
+    }
+    .content{
+        height: 1000px;
+    }
+    .tab{
+        margin: 0 30px;
+    }
+    h2{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .about{
+        height: 700px;
+    }
+    .left{
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
 }
